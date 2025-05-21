@@ -22,7 +22,7 @@ library(patchwork)
   alpha  <- 0.1                  # RL learning rate
   eps    <- 0.1                  # RL epsilon-greedy
   
-  # 2) AIF knobs
+  # 2) AIF parameters
   w_epi  <- 5.0                  # weight on info-gain
   lambda <- 5.0                  # weight on reward
   gamma  <- 5.0                  # softmax inverse temperature

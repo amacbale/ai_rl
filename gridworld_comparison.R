@@ -229,7 +229,7 @@ df <- returns %>% pivot_longer(-episode, names_to="agent", values_to="return")
 ggplot(df, aes(episode, return, color=agent)) +
   stat_summary(fun=mean, geom="line", size=1) +
   theme_minimal() +
-  labs(title="Mean Episode Return: RL vs Naïve AIF",
+  labs(title="Mean Episode Return: RL vs Naive AIF",
        x="Episode", y="Mean Return") +
   geom_hline(yintercept = reward_item*2 + reward_exit_ok + step_cost*horizon,
              linetype="dashed", color="black") +
