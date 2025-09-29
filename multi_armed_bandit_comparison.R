@@ -12,20 +12,20 @@ library(patchwork)
   #set.seed(1424)
   #set.seed(9726)
   #set.seed(4728)
+  #set.seed(7382)
   
-  set.seed(7382)
-  
+  set.seed(seed)
   # 1) Problem spec
   k      <- 5
   true_p <- runif(k, 0.1, 0.9)   # ground truth (unknown to agents)
-  T      <- 5000
+  T      <- 2000
   alpha  <- 0.01                  # RL learning rate
   eps    <- 0.1                 # RL epsilon-greedy
   
   # 2) AIF parameters
   w_epi  <- 5.0                  # weight on info-gain
   lambda <- 25.0                  # weight on reward
-  gamma  <- 15.0                  # softmax inverse temperature
+  gamma  <- 25.0                  # softmax inverse temperature
   
   # 3) Storage & init
   # RL
